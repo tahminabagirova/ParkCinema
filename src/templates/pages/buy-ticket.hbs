@@ -1,0 +1,767 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body class="mobile-ov">
+
+    {{> common/header }}
+
+
+    {{!-- BUY TICKET --}}
+    <section id="buyTicket">
+        {{!-- mobile sidebar --}}
+        <div class="mobile-sidebar">
+            <div class="left-side">
+                <img src="../assets/ward-second.svg" alt="">
+            </div>
+            <div class="right-side">
+                <div class="bottomSideFirst">
+                    <h3 class="titleMovie">
+                        Onward
+                    </h3>
+                    <div class="categories">
+                        <span>2D</span>
+                        <span>RUS</span>
+                        <span>AZ-SUB</span>
+                    </div>
+                    <div class="categories-second">
+                        <div class="line">
+                            <img src="../assets/Vector.svg" alt="">
+                            <p>Flame Towers</p>
+                        </div>
+                        <div class="line">
+                            <img src="../assets/calendar 2.svg" alt="">
+                            <p>17.02.2020</p>
+                        </div>
+                        <div class="line">
+                            <img src="../assets/clock 2.svg" alt="">
+                            <p>16:00</p>
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MARTINI</td>
+                                <td>8</td>
+                                <td>8,9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="secondSideRight">
+                    <div class="f">
+                        <p>Best 2 person combo! – 1 pcs.</p>
+                        <p>Tickets – 2 pcs.</p>
+                    </div>
+                    <div class="s">
+                        <p>Total:</p>
+                        <p>0 AZN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{!-- my table --}}
+        <div class="myTable">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MARTINI</td>
+                        <td>8</td>
+                        <td>8,9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {{!-- main buy ticket --}}
+        <div class="main-buy-ticket">
+            {{!-- line --}}
+            <div class="line-large-accordion active">
+                {{!-- header --}}
+                <div class="large-accordion-header">
+                    <div class="inner">
+                        <h3>1. Date and location</h3>
+                    </div>
+                </div>
+                {{!-- body --}}
+                <div class="large-accordion-body">
+                    {{!-- cinemas --}}
+                    <div class="cinemasItems">
+                        <div class="large-accordion-body-title">
+                            <h3>Take cinema</h3>
+                        </div>
+                        <div class="dropDownCinemas">
+                            <div class="items-top-footer drop-down-key">
+                                <div class="inner-items-top-footer">
+                                    <p>All cinemas</p>
+                                    <svg viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 1.50416L1.27593 0L7.5 5.39074L13.7241 0L15 1.50416L7.5 8L0 1.50416Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="drop-down-language">
+                                <ul class="dropdownUl">
+                                    <li class="active" data-id="">
+                                        Flame Towers
+                                    </li>
+                                    <li data-id="">
+                                        Park Bulvar
+                                    </li>
+                                    <li data-id="">
+                                        Metro Park
+                                    </li>
+                                    <li data-id="">
+                                        Zagulba MAll
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cinemaChecks light-cinema-items">
+                            <div class="form-check flame-towers">
+                                <input class="form-check-input" type="radio" name="cinemas" id="flame-towersS"
+                                    value="flame-towers" checked>
+                                <label class="form-check-label blue" for="flame-towersS">
+                                    FLAME TOWERS
+                                </label>
+                            </div>
+
+                            <div class="form-check park-bulvar">
+                                <input class="form-check-input" type="radio" name="cinemas" id="park-bulvarR"
+                                    value="park-bulvar">
+                                <label class="form-check-label tomato" for="park-bulvarR">
+                                    PARK BULVAR
+                                </label>
+                            </div>
+
+                            <div class="form-check metro-park">
+                                <input class="form-check-input" type="radio" name="cinemas" id="metro-parkK"
+                                    value="metro-park">
+                                <label class="form-check-label green" for="metro-parkK">
+                                    METRO PARK
+                                </label>
+                            </div>
+
+                            <div class="form-check zagulba-mall">
+                                <input class="form-check-input" type="radio" name="cinemas" id="zagulba-mallL"
+                                    value="zagulba-mall">
+                                <label class="form-check-label orange" for="zagulba-mallL">
+                                    ZAGULBA MALL
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- date --}}
+                    <div class="date pick-date">
+                        <div class="large-accordion-body-title">
+                            <h3>Pick date</h3>
+                        </div>
+                        <div id="pickDate" class="dateInner light-checks">
+                            <div class="owl-carousel owl-theme">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="aa" value="1">
+                                    <label class="form-check-label" for="aa">
+                                        <p>Today</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ab" value="2"
+                                        checked>
+                                    <label class="form-check-label" for="ab">
+                                        <p>Mar 20</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ac" value="3">
+                                    <label class="form-check-label" for="ac">
+                                        <p>Mar 21</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ad" value="4">
+                                    <label class="form-check-label" for="ad">
+                                        <p>Mar 22</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ae" value="5">
+                                    <label class="form-check-label" for="ae">
+                                        <p>Mar 23</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="af" value="5">
+                                    <label class="form-check-label" for="af">
+                                        <p>Mar 24</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ag" value="1"
+                                        checked>
+                                    <label class="form-check-label" for="ag">
+                                        <p>Today</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="ah" value="1"
+                                        checked>
+                                    <label class="form-check-label" for="ah">
+                                        <p>Today</p>
+                                        <span>DAY</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- session --}}
+                    <div class="session">
+                        <div class="large-accordion-body-title">
+                            <h3>Choose session</h3>
+                        </div>
+                        <div class="dateInner light-checks">
+                            <div class="line">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d11" value="1"
+                                        checked>
+                                    <label class="form-check-label" for="d11">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d12" value="2">
+                                    <label class="form-check-label" for="d12">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d13" value="3">
+                                    <label class="form-check-label" for="d13">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d14" value="4">
+                                    <label class="form-check-label" for="d14">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d15" value="5">
+                                    <label class="form-check-label" for="d15">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d11" value="1"
+                                        checked>
+                                    <label class="form-check-label" for="d11">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d12" value="2">
+                                    <label class="form-check-label" for="d12">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d13" value="3">
+                                    <label class="form-check-label" for="d13">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d14" value="4">
+                                    <label class="form-check-label" for="d14">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="d15" value="5">
+                                    <label class="form-check-label" for="d15">
+                                        <p>16:00</p>
+                                        <span>RUS 2D</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- button --}}
+                    <div class="button">
+                        <button class="buttonRed continue">CONTINUE</button>
+                    </div>
+                </div>
+            </div>
+            {{!-- line --}}
+            <div class="line-large-accordion">
+                {{!-- header --}}
+                <div class="large-accordion-header">
+                    <div class="inner">
+                        <h3>2. Tickets</h3>
+                    </div>
+                </div>
+                {{!-- body --}}
+                <div class="large-accordion-body">
+                    <div class="ticket-cards">
+                        {{> section/ticket-card}}
+                        {{> section/ticket-card}}
+                        {{> section/ticket-card}}
+                        {{> section/ticket-card}}
+                        {{> section/ticket-card}}
+                    </div>
+                    <div class="total">
+                        <div class="content">
+                            <p>Total: <b>0 AZN</b></p>
+                        </div>
+                        <button class="buttonRed continue">
+                            CONTINUE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{!-- line --}}
+            <div class="line-large-accordion">
+                {{!-- header --}}
+                <div class="large-accordion-header">
+                    <div class="inner">
+                        <h3>3. Seats</h3>
+                    </div>
+                </div>
+                {{!-- body --}}
+                <div class="large-accordion-body seats-body">
+                    <div class="seats-inner">
+                        {{!-- main seats --}}
+                        <div class="main-seats">
+
+                        </div>
+
+                        {{!-- sidebar seats --}}
+                        <div class="sidebar-seats">
+                            <div class="seat-views">
+                                <div class="line selection">
+                                    <span></span>
+                                    <p>Selection</p>
+                                </div>
+                                <div class="line free">
+                                    <span></span>
+                                    <p>Free seats</p>
+                                </div>
+                                <div class="line vip">
+                                    <span></span>
+                                    <p>VIP seats</p>
+                                </div>
+                                <div class="line taken">
+                                    <span></span>
+                                    <p>Taken</p>
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="line">
+                                    <h6>Hall</h6>
+                                    <p>MARTINI</p>
+                                </div>
+                                <div class="line">
+                                    <h6>Row</h6>
+                                    <p>8</p>
+                                </div>
+                                <div class="line">
+                                    <h6>Seats</h6>
+                                    <p>8,9</p>
+                                </div>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>MARTINI</td>
+                                        <td>8</td>
+                                        <td>8,9</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="button-seats">
+                                <button class="buttonRed continue">
+                                    CONTINUE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- line --}}
+            <div class="line-large-accordion">
+                {{!-- header --}}
+                <div class="large-accordion-header">
+                    <div class="inner">
+                        <h3>4. Combo menu</h3>
+                    </div>
+                </div>
+                {{!-- body --}}
+                <div class="large-accordion-body combo-menu-body">
+                    <div class="inner-combo-menu">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="inner-parent">
+                                        <div class="inner">
+                                            <div class="left-side">
+                                                <img src="../assets/image 9.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>Popcorn combo!</h6>
+                                            <p>Small Popcorn, soda (cola, fanta, sprite) 0.3</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>4.50 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>0 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1" disabled />
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner-parent">
+                                        <div class="inner">
+                                            <div class="left-side">
+                                                <img src="../assets/eat.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>Best 2 person combo! </h6>
+                                            <p>2 x Nachos, 1 x Big Popcorn, 2 x Cola 0.5</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>4.50 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>0 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1" disabled />
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner-parent">
+                                        <div class="inner">
+                                            <div class="left-side">
+                                                <img src="../assets/image 9.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>Popcorn combo!</h6>
+                                            <p>Small Popcorn, soda (cola, fanta, sprite) 0.3</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>4.50 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>0 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1" disabled />
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner-parent">
+                                        <div class="inner">
+                                            <div class="left-side">
+                                                <img src="../assets/eat2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>Popcorn combo!</h6>
+                                            <p>Small Popcorn, soda (cola, fanta, sprite) 0.3</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>4.50 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right-side">
+                                            <h6>0 AZN</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="0" disabled />
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mobile-version-table-carousel">
+                            <div class="owl-carousel">
+                                {{> section/combo-menu-card}}
+                                {{> section/combo-menu-card}}
+                                {{> section/combo-menu-card}}
+                                {{> section/combo-menu-card}}
+                                {{> section/combo-menu-card}}
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="content">
+                                <p>Total: <b>0 AZN</b></p>
+                            </div>
+                            <button class="buttonRed continue">
+                                CONTINUE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- line --}}
+            <div class="line-large-accordion">
+                {{!-- header --}}
+                <div class="large-accordion-header">
+                    <div class="inner">
+                        <h3>5. Payment</h3>
+                    </div>
+                </div>
+                {{!-- body --}}
+                <div class="large-accordion-body payment-body">
+                    <div class="payment">
+                        {{!-- left side --}}
+                        <div class="left-side">
+                            <form action="">
+                                <div class="first">
+                                    <div class="inputGroupLight">
+                                        <label for="">E-mail</label>
+                                        <input type="text" placeholder="input">
+                                    </div>
+                                    <div class="inputGroupLight">
+                                        <label for="">Phone number</label>
+                                        <input type="text" placeholder="input">
+                                    </div>
+                                    <div class="check-agree">
+                                        <label class="container-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            I agree with <a href="" class="ml-1"> terms and policy</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="inputGroupLight">
+                                        <label for="">Umico</label>
+                                        <input type="text" placeholder="input">
+                                    </div>
+                                    <div class="inputGroupLight">
+                                        <label for="">Ulduzum</label>
+                                        <input type="text" placeholder="input">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        {{!-- right side --}}
+                        <div class="right-side">
+                            <form action="">
+                                <div class="first-side">
+                                    <h2>Card details</h2>
+                                    <div class="inputGroupLight">
+                                        <label for="">Name Surname</label>
+                                        <input type="text" placeholder="input">
+                                    </div>
+
+                                    <div class="inputGroupLight">
+                                        <label for="">Card number</label>
+                                        <div class="inputs">
+                                            <input type="text" placeholder="4444">
+                                            <input type="text" placeholder="4444">
+                                            <input type="text" placeholder="4444">
+                                            <input type="text" placeholder="4444">
+                                        </div>
+                                    </div>
+
+                                    <div class="inputGroupLight">
+                                        <div class="labels">
+                                            <label for="">Name Surname</label>
+                                            <label for="">CVC <img src="../assets/Group 172.svg" alt=""></label>
+                                        </div>
+                                        <div class="inputs">
+                                            <input type="text" placeholder="Month">
+                                            <span>/</span>
+                                            <input type="text" placeholder="Year">
+                                            <input class="cvc" type="text" placeholder="CVC">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="second-side">
+                                    <button class="buttonOutlineLight">
+                                        bonus payment
+                                    </button>
+                                    <button class="buttonRed">
+                                        Purchase 15,60 AZN
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{!-- sidebar buy ticket --}}
+        <div class="sidebar-buy-ticket">
+            {{!-- top side --}}
+            <div class="topSide">
+                <img src="../assets/onwardheader.jpg" alt="">
+                <div class="layer-on-img"></div>
+                <div class="poster">
+                    <img src="../assets/ward-second.svg" alt="">
+                </div>
+            </div>
+            {{!-- bottom side --}}
+            <div class="bottomSide">
+                <div class="bottomSideFirst">
+                    <h3 class="titleMovie">
+                        Onward
+                    </h3>
+                    <div class="categories">
+                        <span>2D</span>
+                        <span>RUS</span>
+                        <span>AZ-SUB</span>
+                    </div>
+                    <div class="categories-second">
+                        <div class="line">
+                            <img src="../assets/Vector.svg" alt="">
+                            <p>Flame Towers</p>
+                        </div>
+                        <div class="line">
+                            <img src="../assets/calendar 2.svg" alt="">
+                            <p>17.02.2020</p>
+                        </div>
+                        <div class="line">
+                            <img src="../assets/clock 2.svg" alt="">
+                            <p>16:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomSideSecond">
+                    <p>Best 2 person combo! – 1 pcs.</p>
+                    <p>Tickets – 2 pcs.</p>
+                    <div class="line">
+                        <p>Total:</p>
+                        <p>0 AZN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

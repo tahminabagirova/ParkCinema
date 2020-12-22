@@ -1,0 +1,167 @@
+<section id="menuModal">
+    <div class="innerMenuModal">
+        <div class="row justify-content-around">
+            {{!-- menu --}}
+            <div class="menu col-lg-6">
+                {{!-- MENU TOP --}}
+                <div class="menuTop">
+                    {{!-- buttons if login --}}
+                    <button class="buttonoutline d-none">LOG IN</button>
+                    <button class="buttonRed d-none">SIGN UP</button>
+                    {{!-- menu profile --}}
+                    <div class="menu-profile">
+                        <a href="profile.html" class="menu-user-avatar">
+                            <img src="../assets/agZwx4nb_400x400.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <p class="name">Tahmina Bagirova</p>
+                            <p class="email">tahmina.b@labrin.tech</p>
+                        </div>
+                    </div>
+                    {{!-- cell --}}
+                    <div class="cell">
+                        <svg viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0002 26.3333C12.4668 26.3333 13.6668 25.1333 13.6668 23.6666H8.3335C8.3335 25.1333 9.5335 26.3333 11.0002 26.3333ZM19.0002 18.3333V11.6666C19.0002 7.57325 16.8268 4.14659 13.0002 3.23992V2.33325C13.0002 1.22659 12.1068 0.333252 11.0002 0.333252C9.8935 0.333252 9.00016 1.22659 9.00016 2.33325V3.23992C5.18683 4.14659 3.00016 7.55992 3.00016 11.6666V18.3333L0.333496 20.9999V22.3333H21.6668V20.9999L19.0002 18.3333ZM16.3335 19.6666H5.66683V11.6666C5.66683 8.35992 7.68016 5.66659 11.0002 5.66659C14.3202 5.66659 16.3335 8.35992 16.3335 11.6666V19.6666Z"
+                                fill="#BAC3D4" />
+                        </svg>
+                    </div>
+                </div>
+                {{!-- MENU BOTTOM --}}
+                <div class="menuBottom">
+                    <a href="campaings.html">CAMPAINGS / TARIFFS</a>
+                    <a href="combo-menu.html">COMBO MENU</a>
+                    <a href="imax.html">IMAX</a>
+                    <a href="">DOLBY ATMOS</a>
+                    <a href="cinemas.html">CINEMAS</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="advertising.html">ADVERTISING</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                {{!-- language  --}}
+                <div class="langSelectContainer">
+                    <img src="../assets/Group 330.svg" alt="">
+                    <span>LANGUAGE:</span>
+                    <div class="language">
+                        <p>EN</p>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255px" height="255px"
+                            viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                            <g>
+                                <g id="arrow-drop-down">
+                                    <polygon points="0,63.75 127.5,191.25 255,63.75" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                {{!-- log out --}}
+                <div class="log-out-parent">
+                    <div class="log-out">
+                        <svg viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.1156 0.5H5.89579C5.41616 0.5 5.01147 0.905 5.01147 1.385V5.27H6.78011V2.27H18.2463V21.215H6.78011V18.215H5.01147V22.1C5.01147 22.595 5.41616 23 5.89579 23H19.1156C19.5953 23 19.9999 22.595 19.9999 22.115V1.385C19.9999 0.905 19.6102 0.5 19.1156 0.5Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.21714 12.59H12.4908V10.91H4.21714L6.36049 9.125L5.01153 8L0.5 11.75L5.01153 15.5L6.36049 14.375L4.21714 12.59Z" />
+                        </svg>
+                        <p>LOG OUT</p>
+                    </div>
+                </div>
+            </div>
+            {{!-- carousel --}}
+            <div class="carouselMenuModal col-lg-16">
+                <div class="owl-carousel owl-theme">
+                    <div class="owlItemChild">
+                        <div class="campaign">
+                            <div class="top">
+                                <h2>IMAX</h2>
+                                <p>6,90azn</p>
+                            </div>
+                            <div class="bottom">
+                                <span>more details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owlItemChild">
+                        <img src="../assets/Blood.svg" alt="" class="poster">
+                    </div>
+                    <div class="owlItemChild">
+                        <img src="../assets/Believe.svg" alt="" class="poster">
+                    </div>
+                    <div class="owlItemChild">
+                        <img src="../assets/Mrs..svg" alt="" class="poster">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{!-- language --}}
+        <div class="selectLanguage">
+            <div class="miniHeader">
+                <div class="content">
+                    <img src="../assets/Language.svg" alt="">
+                    <span>Language</span>
+                </div>
+                <div class="closeIconLang">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.22217" width="25.1415" height="3.14269" transform="rotate(45 2.22217 0)"
+                            fill="#566178" />
+                        <rect y="17.7772" width="25.1416" height="3.14269" transform="rotate(-45 0 17.7772)"
+                            fill="#566178" />
+                    </svg>
+                </div>
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="lang" id="az" value="az">
+                    <label class="form-check-label" for="az">
+                        AZ
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="lang" id="en" value="en" checked>
+                    <label class="form-check-label" for="en">
+                        EN
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="lang" id="ru" value="ru" checked>
+                    <label class="form-check-label" for="ru">
+                        РУС
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

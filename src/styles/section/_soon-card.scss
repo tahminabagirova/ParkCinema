@@ -1,0 +1,228 @@
+.soonCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    width: 240px;
+
+    @include max-sm {
+        width: 163px;
+        margin-bottom: 48px;
+    }
+
+    .posterContainer {
+        height: 350px;
+        position: relative;
+
+        @include max-sm {
+            height: 242px;
+        }
+
+        &:hover {
+            .overlayPoster {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+        .overlayPosterCell {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(15, 16, 20, 0.432);
+
+            .cellArea {
+                width: 100%;
+                padding: 16px;
+                display: flex;
+                justify-content: flex-end;
+
+                .cellPosterSoon {
+                    height: 30px;
+                    width: 30px;
+                    cursor: pointer;
+
+                    svg {
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .overlayPoster {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(15, 16, 20, 0.7);
+            backdrop-filter: blur(4px);
+            transition: $tr;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            z-index: 9;
+
+            @include max-sm {
+                display: none;
+            }
+
+            .posterInnerArea {
+                height: 255px;
+                width: 100%;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .playButtonPoster {
+                    height: 60px;
+                    width: 60px;
+                    cursor: pointer;
+
+                    &:hover svg {
+
+                        g,
+                        path {
+                            fill: $red_10;
+                        }
+                    }
+
+                    &.active svg {
+
+                        path,
+                        g {
+                            fill: white;
+                        }
+                    }
+
+                    svg {
+                        height: 100%;
+                        width: 100%;
+
+                        g,
+                        path {
+                            transition: 0.3s;
+                            fill: white;
+                        }
+                    }
+                }
+
+                .posterButtons {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    button {
+                        padding: 11px;
+
+                        &:first-child {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trailer {
+        width: 100%;
+        height: 40px;
+        background: $dark_40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include min-sm {
+            display: none;
+        }
+
+        svg {
+            height: 17px;
+            width: 17px;
+            margin-right: 11px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: $dark_120;
+        }
+    }
+
+    .contentSoonCard {
+        .nameMovideCard {
+            display: flex;
+            margin: 10px 0 8px 0;
+
+            @include max-sm {
+                margin: 10px 0 4px 0;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.0015em;
+                color: $dark_100;
+                margin-right: 12px;
+
+                @include max-sm {
+                    font-size: 14px;
+                }
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.001em;
+                color: $dark_70;
+                height: 24px;
+                width: 36px;
+                border: 1px solid $dark_70;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include max-sm {
+                    font-size: 16px;
+                    height: 20px;
+                    width: 35px;
+                }
+            }
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $red_10;
+
+            @include max-sm {
+                font-size: 14px;
+            }
+        }
+    }
+}

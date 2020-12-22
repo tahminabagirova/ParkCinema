@@ -1,0 +1,117 @@
+#terms-conditions {
+
+    //content
+    .content {
+        margin-bottom: 65px;
+
+        @include max-lg{
+            margin-bottom: 48px;
+        }
+
+        @include max-sm{
+            margin-bottom: 32px;
+        }
+
+        h4 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.0015em;
+            color: $dark_100;
+            margin-bottom: 24px;
+
+            @include max-lg{
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight:normal;
+            }
+
+            @include max-sm{
+                font-size: 17px;
+            }
+        }
+
+        h5 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.0015em;
+            color: $dark_120;
+            margin-bottom: 32px;
+
+            @include max-lg{
+                font-size:16px;
+                margin-bottom: 28px;
+            }
+
+            @include max-sm{
+                font-size:15px;
+            }
+        }
+
+        h6 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $dark_120;
+            margin: 40px 0 16px 0;
+
+            @include max-lg{
+                font-size: 15px;
+                margin:32px 0 16px 0;
+            }
+
+            @include max-sm{
+                font-size: 13px;
+                margin:28px 0 16px 0;
+            }
+        }
+
+        ul {
+            li {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                color: $dark_100;
+                margin-bottom: 24px;
+
+                @include max-lg{
+                    font-size: 14px;
+                    margin-bottom: 18px;
+                }
+
+                @include max-sm{
+                    font-size: 12px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    //prohibitions
+    .prohibitions {
+        width: 100%;
+        height: auto;
+        margin-bottom: 64px;
+
+        @include max-lgUp{
+            margin-bottom: 0;
+        }
+
+        // @include max-tabletOnly{
+        //     margin-bottom: 48px;
+        // }
+        
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

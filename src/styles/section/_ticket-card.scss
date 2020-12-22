@@ -1,0 +1,200 @@
+.ticket-card {
+    width: calc(100%/5);
+    height: fit-content;
+    background-color: white;
+    border: 1px solid $dark_110;
+    padding: 34px 24px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+
+    @include max-lgUp {
+        padding: 24px 24px 16px;
+        margin: 0 5px;
+    }
+
+    @include max-lg {
+        width: 100%;
+        padding: 10px;
+        flex-direction: unset;
+        justify-content: space-between;
+        margin: 4px 0;
+    }
+
+    .top-side {
+        @include max-lg {
+            display: flex;
+        }
+
+        .top-side-img {
+            width: 109px;
+            height: 103px;
+            margin-bottom: 26px;
+
+            @include max-lgUp {
+                width: 79px;
+                height: 79px;
+            }
+
+            @include max-lg {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .mobile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h6 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $dark_30;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: $dark_50;
+            margin-bottom: 16px;
+        }
+
+        h6,
+        p {
+            display: block;
+            margin: 0;
+        }
+
+        @include min-lg {
+            display: none;
+        }
+    }
+
+    .bottom-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include max-lg {
+            flex-direction: unset;
+        }
+
+        .inner {
+            @include max-lg {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        h6 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $dark_30;
+            margin-bottom: 4px;
+
+            @include max-lgUp {
+                font-size: 14px;
+                margin-bottom: 2px;
+            }
+
+            @include max-lg {
+                display: none;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: $dark_50;
+            margin-bottom: 16px;
+
+            @include max-lgUp {
+                font-size: 12px;
+            }
+
+            @include max-lg {
+                display: none;
+            }
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.0015em;
+            color: $dark_30;
+            margin-bottom: 17px;
+            display: block;
+
+            @include max-lgUp {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            @include max-lg{
+                margin-right: 30px;
+            }
+
+            @include max-sm{
+                display: none;
+            }
+        }
+
+        .ticket-dropdown {
+            position: relative;
+            width: 96px;
+            height: 40px;
+
+            .items-top-footer {
+                background: $dark_140;
+                border: 1px solid $dark_110;
+            }
+
+            .inner-items-top-footer {
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.005em;
+                    color: $dark_90;
+                    margin-bottom: 0;
+                    display: -webkit-inline-box;
+                }
+            }
+
+            .drop-down-language {
+                transform: translateY(0);
+                top: 42px;
+            }
+        }
+    }
+}

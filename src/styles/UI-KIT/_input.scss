@@ -1,0 +1,194 @@
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: $dark_70;
+        margin-bottom: 10px;
+        transition: $tr;
+
+        @include max-lg{
+            font-size:14px;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        background: $dark_20;
+        border: 1px solid $dark_70;
+        padding: 11px 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: $dark_100;
+        outline: none !important;
+        transition: $tr;
+
+        @include max-lg{
+            font-size:14px;
+        }
+
+        &:hover {
+            background: $dark_30;
+            color: $dark_100;
+
+            &::placeholder {
+                color: $dark_100;
+            }
+        }
+
+        &:focus {
+            background: $dark_30;
+            color: $dark_120;
+
+            &::placeholder {
+                color: $dark_120;
+            }
+        }
+
+        &::placeholder {
+            color: $dark_120;
+        }
+    }
+
+    textarea {
+        &::-webkit-scrollbar {
+            width: 3px;
+            background-color: $dark;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $red_10;
+            border-radius: 4px;
+        }
+    }
+}
+
+.inputGroupLight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+
+    label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: $dark_40;
+        margin-bottom: 8px;
+        transition: $tr;
+
+        @include max-lg{
+            font-size:14px;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        background: $dark_140;
+        border: 1px solid $dark_110;
+        padding: 11px 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: $dark_90;
+        outline: none !important;
+        transition: $tr;
+
+        @include max-lg{
+            font-size:14px;
+        }
+
+        &:hover {
+            background: $dark_130;
+            color: $dark_50;
+
+            &::placeholder {
+                color: $dark_50;
+            }
+        }
+
+        &:focus {
+            background: $dark_130;
+            color: $dark_50;
+            border-color: $dark_50;
+
+            &::placeholder {
+                color: $dark_50;
+            }
+        }
+
+        &::placeholder {
+            color: $dark_90;
+        }
+    }
+
+    textarea {
+        &::-webkit-scrollbar {
+            width: 3px;
+            background-color: $dark;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $red_10;
+            border-radius: 4px;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            margin-right: 10px;
+            padding: 11px 18px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: $dark_90;
+            margin-right: 10px;
+        }
+
+        .cvc{
+            margin-left: 75px;
+
+            @include max-lgDown{
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .labels {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            margin-left: 12px;
+        }
+    }
+}

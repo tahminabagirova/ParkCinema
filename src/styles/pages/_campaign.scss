@@ -1,0 +1,253 @@
+#campaign {
+    .contentCampaign {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 233px;
+
+        @include max-lgUp {
+            padding: 0 190px;
+        }
+
+        @include max-lg {
+            padding: 0 100px;
+        }
+
+        @include max-md {
+            padding: 0 60px;
+        }
+
+        @include max-sm {
+            padding: 0 16px;
+        }
+
+        .top {
+            width: 100%;
+            height: 568px;
+            margin: 40px 0;
+
+            @include max-lg {
+                height: 500px;
+            }
+
+            @include max-tabletOnly {
+                height: 400px;
+                margin: 24px 0;
+            }
+
+            @include max-md {
+                height: 300px;
+            }
+
+            @include max-sm {
+                height: 190px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .main {
+            width: 815px;
+            margin-bottom: 100px;
+
+            @include max-lg {
+                width: 100%;
+            }
+
+            h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 58px;
+                color: $dark_120;
+                margin-bottom: 24px;
+
+                @include max-lg {
+                    font-size: 30px;
+                }
+
+                @include max-md {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+
+            .line {
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.0015em;
+                    color: $dark_120;
+
+                    @include max-md {
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+
+                    @include max-sm {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    color: $dark_100;
+
+                    @include max-md {
+                        font-size: 14px;
+                    }
+
+                    @include max-sm {
+                        font-size: 12px;
+                    }
+                }
+
+                h4 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.001em;
+                    color: $dark_120;
+                    margin-bottom: 16px;
+
+                    @include max-md {
+                        font-size: 14px;
+                    }
+
+                    @include max-sm {
+                        font-size: 12px;
+                    }
+                }
+
+                ul {
+                    margin: 0 0 40px 15px;
+
+                    @include max-lgDown {
+                        margin: 0 0 24px 15px;
+                    }
+
+                    li {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: $dark_100;
+                        list-style: decimal;
+
+                        @include max-md {
+                            font-size: 14px;
+                        }
+
+                        @include max-sm {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .first-line {
+                h3 {
+                    margin-bottom: 20px;
+
+                    @include max-lgDown {
+                        margin-bottom: 12px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 48px;
+
+                    @include max-lgDown {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+
+            .second-line {
+                h3 {
+                    &:first-child {
+                        margin-bottom: 48px;
+
+                        @include max-lgDown {
+                            margin-bottom: 18px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-bottom: 40px;
+
+                        @include max-lgDown {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+
+            .third-line {
+                p {
+                    margin-bottom: 40px;
+
+                    @include max-lgDown {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+
+            .fourth-line {
+                h3 {
+                    &:first-child {
+                        margin-bottom: 40px;
+
+                        @include max-lgDown {
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-bottom: 24px;
+
+                    }
+                }
+            }
+
+            .links {
+                width: 100%;
+                display: flex;
+
+                @include max-tablet {
+                    flex-direction: column;
+                }
+
+                a {
+                    width: 215px;
+                    height: 60px;
+                    display: block;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+
+                    @include max-tablet {
+                        width: 100%;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+
+                        @include max-tablet {
+                            margin: 0 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

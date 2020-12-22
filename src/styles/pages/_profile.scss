@@ -1,0 +1,1149 @@
+//close button
+.times {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+
+    &:hover {
+        svg rect {
+            fill: $red_20;
+        }
+    }
+
+    &:active,
+    &.active {
+        svg rect {
+            fill: $red_10;
+        }
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+        transition: $tr;
+    }
+}
+
+// back button
+.back {
+    width: 21px;
+    height: 19px;
+    cursor: pointer;
+
+    &:hover {
+        svg rect {
+            fill: $red_20;
+        }
+    }
+
+    &:active,
+    &.active {
+        svg rect {
+            fill: $red_10;
+        }
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+        transition: $tr;
+    }
+}
+
+//invite friends
+.ie-fs-inner-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    @include max-lgUp {
+        padding-top: 24px;
+    }
+
+    @include max-sm {
+        padding-top: 0;
+    }
+
+    form {
+        width: 490px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include max-tabletOnly {
+            width: 100%;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.0015em;
+            color: $dark_100;
+
+            @include max-lg {
+                font-size: 18px;
+            }
+        }
+
+        .inner {
+            display: flex;
+
+            input {
+                @include max-sm {
+                    padding: 7px 20px;
+                }
+            }
+
+            .buttonRed {
+                padding: 10px 35px;
+            }
+
+            .copy-link-desk {
+                width: 272px;
+
+                @include max-sm {
+                    display: none;
+                }
+            }
+        }
+
+        .copy-link-mobile {
+            width: 100%;
+            height: 40px;
+            margin-top: 16px;
+
+            @include min-sm {
+                display: none;
+            }
+        }
+
+        h4 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $dark_70;
+            margin-bottom: 32px;
+
+            @include max-lg {
+                font-size: 16px;
+            }
+        }
+
+        h5 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: $dark_100;
+            margin-bottom: 15px;
+
+            @include max-lg {
+                font-size: 16px;
+            }
+        }
+
+        .icons {
+            display: flex;
+
+            a {
+                display: block;
+
+                &:first-child {
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+//PROFILE MOBILE
+#profile {
+
+    @include max-md {
+        display: none;
+    }
+
+    .innerProfile {
+        display: flex;
+
+        //sidebar
+        .sidebar-profile {
+            background: $dark_30;
+            width: fit-content;
+            margin: 40px 0;
+            height: calc(100vh - 160px);
+            position: relative;
+
+            @include max-lgUp {
+                margin: 25px 0;
+                height: calc(100vh - 130px);
+            }
+
+            @include max-lg {
+                height: calc(100vh - 114px);
+            }
+
+            @include max-sm {
+                // margin: 25px 0;
+                height: calc(100vh - 106px);
+            }
+
+            .top-side {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 26px 60px;
+
+                @include max-lgUp {
+                    padding: 25px;
+                }
+
+                .profile-img {
+                    width: 184px;
+                    height: 184px;
+                    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2), 3px 3px 14px rgba(0, 0, 0, 0.12), 6px 8px 10px rgba(0, 0, 0, 0.14);
+                    border-radius: 50%;
+                    margin-bottom: 25px;
+
+                    @include max-lgDown {
+                        width: 155px;
+                        height: 155px;
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .edit-profile-button {
+                    a {
+                        padding: 12px 32px;
+                    }
+                }
+            }
+
+            .bottom-side {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .menu-list {
+                    li {
+                        .tab-item {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 22px;
+                            letter-spacing: 0.001em;
+                            color: $dark_100;
+                            padding: 22px 28px;
+                            display: flex;
+                            align-items: center;
+                            transition: $tr;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+
+                            @include max-lgUp {
+                                padding: 15px;
+                                font-size: 16px;
+                            }
+
+                            &.active {
+                                background-color: $dark_50;
+                                border: 1px solid $dark_70;
+                                color: $dark_120;
+
+                                svg path {
+                                    fill: $dark_100;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $dark_50;
+
+                                p {
+                                    color: $dark_120;
+                                }
+
+                                svg path {
+                                    fill: $dark_100;
+                                }
+                            }
+
+                            svg {
+                                height: 20px;
+                                width: 20px;
+                                margin-right: 12px;
+
+                                path {
+                                    transition: $tr;
+                                    fill: $dark_70;
+                                }
+
+                                @include max-lg {
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .log-out-parent {
+                    position: absolute;
+                    bottom: 0;
+
+                    .log-out {
+                        display: flex;
+                        align-items: center;
+                        padding: 24px;
+                        cursor: pointer;
+
+                        @include max-lgUp {
+                            padding: 15px;
+                        }
+
+                        &:hover {
+                            svg path {
+                                fill: $red_20;
+                            }
+
+                            p {
+                                color: $red_20;
+                            }
+                        }
+
+                        &:active {
+                            svg path {
+                                fill: $red_10;
+                            }
+
+                            p {
+                                color: $red_10;
+                            }
+                        }
+
+                        svg {
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 8px;
+
+                            path {
+                                fill: $dark_70;
+                                transition: $tr;
+                            }
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 22px;
+                            letter-spacing: 0.001em;
+                            color: $dark_100;
+                            transition: $tr;
+
+                            @include max-lg {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //main
+        .main-profile {
+            width: 100%;
+            position: relative;
+            padding: 56px 5px 0 80px;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            @include max-lgUp {
+                height: calc(100vh - 106px);
+            }
+
+            @include max-lg {
+                height: calc(100vh - 90px);
+                padding: 24px 5px 0 24px;
+            }
+
+            &::-webkit-scrollbar {
+                width: 3px;
+                background-color: $dark;
+                height: 50%;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: $red_10;
+                border-radius: 3px;
+            }
+
+            //top side
+            .top-side {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                @include max-lg {
+                    margin-bottom: 28px;
+                }
+
+                @include max-tabletOnly {
+                    flex-direction: column;
+                }
+
+                .left-side {
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: 0.001em;
+                        color: $dark_70;
+                        margin-bottom: 8px;
+
+                        @include max-lg {
+                            font-size: 16px;
+                        }
+                    }
+
+                    h1 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 43px;
+                        letter-spacing: 0.0025em;
+                        color: $dark_120;
+                        margin-top: 16px;
+
+                        @include max-lg {
+                            font-size: 28px;
+                            margin-top: 12px;
+                        }
+                    }
+
+                    h4 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 30px;
+                        line-height: 36px;
+                        color: $dark_100;
+                        margin: 25px 0 8px 0;
+
+                        @include max-lg {
+                            font-size: 20px;
+                            margin: 5px 0 4px 0;
+                        }
+                    }
+                }
+
+                .right-side {
+                    .bonuse-card {
+                        background: $dark_30;
+                        padding: 30px;
+                        width: 429px;
+                        margin-bottom: 20px;
+
+                        @include max-lg {
+                            padding: 16px;
+                        }
+
+                        @include max-tabletOnly {
+                            width: unset;
+                        }
+
+                        .line {
+                            display: flex;
+                            justify-content: space-between;
+
+                            svg {
+                                height: 24px;
+                                width: 24px;
+                                // margin-left: 140px;
+                            }
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.0025em;
+                            color: $dark_100;
+                            margin-bottom: 4px;
+
+                            span {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 22px;
+                                letter-spacing: 0.001em;
+                                color: $dark_120;
+
+                                @include max-lg {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        h4 {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 36px;
+                            line-height: 43px;
+                            letter-spacing: 0.0025em;
+                            color: $dark_100;
+
+                            @include max-lg {
+                                font-size: 28px;
+                            }
+                        }
+
+                        .buttonOutline {
+                            padding: 11px 32px;
+                        }
+
+                    }
+
+                    .buttonContact {
+                        padding: 20px 10px;
+
+                        @include max-lg {
+                            padding: 12px 10px;
+                        }
+                    }
+                }
+            }
+
+            .main-top {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                //bottom side
+                .bottom-side {
+                    .notification-card {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: $dark_30;
+                        padding: 16px 20px;
+                        margin-bottom: 20px;
+
+                        @include max-lg {
+                            padding: 10px 12px;
+                            margin-bottom: 8px;
+                        }
+
+                        .poster {
+                            width: 42px;
+                            height: 61px;
+                            margin-right: 24px;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .inner {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .content {
+                                span {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    letter-spacing: 0.005em;
+                                    color: $dark_120;
+
+                                    @include max-lgDown {
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                p {
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    letter-spacing: 0.005em;
+                                    color: $dark_100;
+                                    display: flex;
+                                    flex-wrap: wrap;
+
+                                    @include max-lgDown {
+                                        font-size: 14px;
+                                    }
+
+                                    span {
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        letter-spacing: 0.005em;
+                                        color: $red_20;
+
+                                        @include max-lgDown {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .button {
+                                display: flex;
+                                align-items: center;
+
+                                @include max-lgDown {
+                                    margin-left: 8px;
+                                }
+
+                                .buttonOutline {
+                                    padding: 5px 14px;
+                                    width: max-content;
+                                }
+
+                                .buttonNormal {
+                                    padding: 6px 11px;
+                                    width: max-content;
+                                }
+
+                                span {
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    letter-spacing: 0.005em;
+                                    color: $dark_100;
+                                    margin-left: 104px;
+
+                                    @include max-lg {
+                                        margin-left: 24px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .row-parent {
+                    .row {
+                        width: 1272px;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        @include max-lgUp {
+                            width: 100%;
+                        }
+
+                        .col-xl-6 {
+                            @include max-lg {
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+//PROFILE MOBILE
+#profile-mobile {
+    @include min-md {
+        display: none;
+    }
+
+    .profile-card {
+        padding: 24px 0 20px 0;
+        display: flex;
+
+        .profile-photo {
+            height: 112px;
+            width: 112px;
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2), 3px 3px 14px rgba(0, 0, 0, 0.12), 6px 8px 10px rgba(0, 0, 0, 0.14);
+            border-radius: 50%;
+            margin-right: 24px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+
+            }
+        }
+
+        .content {
+            h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.001em;
+                color: $dark_120;
+                margin-bottom: 4px;
+            }
+
+            h4 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.001em;
+                color: $dark_100;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.0025em;
+                color: $dark_70;
+            }
+        }
+    }
+
+    .buttonContact {
+        padding: 5px;
+        margin-bottom: 36px;
+    }
+
+    // carousel profile page mobile
+    .carousel-profile-page {
+
+        .owl-stage {
+            padding-left: 0 !important;
+        }
+
+        .item {
+            display: flex;
+            background: $dark_30;
+            border: 1px solid transparent;
+            padding: 10px;
+            width: 138px;
+            transition: $tr;
+
+            // @include min-sm{
+            //     width: max-content;
+            // }
+
+            &.active {
+                background: $dark_50;
+                border-color: $dark_70;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+                margin-right: 5px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.0025em;
+                color: $dark_100;
+            }
+        }
+    }
+
+    // tab body mobile
+    .mobile-tab-body {
+        width: 100%;
+        position: relative;
+        margin-top: 24px;
+
+        .tab-body {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            .bonuse-card-container {
+                background: $dark_30;
+                padding: 20px 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .buttonOutline {
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+
+            //bonuse card
+            .add-bonuse-card-wrapper {
+                background: $dark_30;
+                padding: 16px 14px 24px 14px;
+                margin-top: 24px;
+                display: none;
+
+                .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 22px;
+
+                    h3 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: $dark_100;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+
+                form {
+                    margin: 0;
+
+                    .inputGroup {
+                        margin-bottom: 16px;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+
+                        button {
+                            height: 40px;
+                            width: 48%;
+                        }
+                    }
+                }
+            }
+
+            //choose where send
+            .choose-where-send {
+                background: $dark_30;
+                padding: 16px 14px 24px 14px;
+                margin-top: 24px;
+                display: none;
+
+                //header
+                .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                }
+
+                //body
+                .body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: 0.001em;
+                        color: $dark_120;
+                        margin-bottom: 8px;
+                    }
+
+                    h3 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        letter-spacing: 0.005em;
+                        color: $dark_100;
+                    }
+
+                    h2 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: center;
+                        letter-spacing: 0.0015em;
+                        color: $red_20;
+                        margin: 4px 0 20px 0;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                        letter-spacing: 0.0025em;
+                        color: $dark_100;
+                        margin-top: 16px;
+                    }
+
+                    .checkbox-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+
+                        .payment-at-the-door {
+                            margin-right: 20px;
+                        }
+
+                        .form-check {
+                            @media(max-width: 576px) {
+                                width: 100%;
+                                max-width: 450px;
+                            }
+                        }
+
+                        input[type="radio"]+label {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            background: $dark_40;
+                            border: 1px solid $dark_50;
+                            height: 48px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $dark_120;
+
+                            @media(max-width: 576px) {
+                                width: 100%;
+                            }
+                        }
+
+                        input[type="radio"]:checked+label {
+                            background-color: $dark_50;
+                            border-color: $dark_70;
+
+                        }
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        @media (max-width: 576px) {
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: unset;
+
+                            .form-check {
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //promo code container
+            .promo-code-container {
+                padding: 16px;
+                background: $dark_30;
+
+                button {
+                    margin: 0;
+                    background: transparent;
+                    height: 48px;
+                    outline: none !important;
+                }
+
+                .inputGroup {
+                    margin: 0;
+                    display: none;
+
+                    input {
+                        height: 48px;
+                    }
+                }
+            }
+
+            //activate promo code
+            .activate-promo-code {
+                margin-top: 16px;
+                display: none;
+
+                button {
+                    width: 100%;
+                    padding: 11px;
+                }
+            }
+
+            //promo code activated
+            .promo-code-activated {
+                background: $dark_30;
+                border: 1px solid $dark_50;
+                padding: 16px 40px 16px 16px;
+                margin-top: 16px;
+                display: none;
+
+                .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    h3 {
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: $dark_100;
+                        text-align: center;
+                    }
+                }
+
+                .body {
+                    h1 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-align: center;
+                        letter-spacing: 0.0015em;
+                        color: $dark_120;
+                        margin-top: 22px;
+                    }
+                }
+            }
+
+            //views mobile
+            .my-views-mobile {
+                .row {
+                    display: flex;
+                    justify-content: center;
+
+                    .col-12 {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            //watch later mobile
+            .watch-later-mobile {
+                .row {
+                    display: flex;
+                    justify-content: center;
+
+                    .col-12 {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .notifications-mobile {
+                .noti-mobile {
+                    background: $dark_30;
+                    padding: 16px;
+                    margin-bottom: 16px;
+
+                    .body {
+                        display: flex;
+
+                        .poster {
+                            min-width: 96px;
+                            height: 140px;
+                            margin-right: 16px;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .top-side {
+                                h5 {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    letter-spacing: 0.005em;
+                                    color: $dark_120;
+                                    margin-bottom: 8px;
+                                }
+
+                                p {
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    letter-spacing: 0.0025em;
+                                    color: $dark_100;
+
+                                    span{
+                                        color:$red_20;
+                                    }
+                                }
+                            }
+
+                            .bottom-side {
+                                span {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    letter-spacing: 0.005em;
+                                    color: $dark_100;
+                                    display: block;
+                                    margin-top: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .buttonOutline {
+                        width: 100%;
+                        height: 32px;
+                        margin-top: 16px;
+                    }
+
+                    .buttonNormal{
+                        width: 100%;
+                        height: 32px;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

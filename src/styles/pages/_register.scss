@@ -1,0 +1,283 @@
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inner {
+        width: 508px;
+        background: $dark_30;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        margin-top: 40px;
+        padding: 56px 54px;
+
+        @include max-lgUp {
+            padding: 20px 30px 0 30px;
+        }
+
+        @include max-lgDown {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        @include max-tablet {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.0015em;
+            color: $dark_100;
+            margin-bottom: 28px;
+            text-align: center;
+
+            @include max-lgUp {
+                margin-bottom: 18px;
+            }
+
+            @include max-lg {
+                font-size: 18px;
+            }
+        }
+
+        .forgot-password {
+            margin-bottom: 16px;
+        }
+
+        .p-first-item {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: $dark_70;
+            margin-bottom: 32px;
+
+            @include max-lg {
+                font-size: 14px;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                text-decoration-line: underline;
+                color: $red_20;
+            }
+        }
+
+        .inputGroup {
+            input {
+                @include max-lgUp {
+                    height: 40px;
+                }
+            }
+        }
+
+        .check-agree {
+            .checkmark {
+                transform: translateY(0);
+                background: $dark_30;
+                border-color: $dark_50;
+            }
+
+            .remind-me-span {
+                transform: translateY(-2px);
+            }
+
+            .remind-me-label {
+                margin-bottom: 0;
+            }
+
+            label {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #BAC3D4;
+
+                a {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    text-decoration-line: underline;
+                    color: $red_20;
+                }
+            }
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                text-decoration-line: underline;
+                color: $red_20;
+            }
+        }
+    }
+
+    .inner-sent-email{
+        padding: 56px;
+
+        @include max-tablet{
+            padding: 20px;
+        }
+
+        form{
+            margin-bottom: 0;
+        }
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 26px;
+
+        @include max-lgUp {
+            margin: 20px 0;
+        }
+
+        button {
+            height: 48px;
+            width: 100%;
+
+            @include max-sm {
+                height: 40px;
+            }
+        }
+    }
+
+    .reset-link {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark_100;
+        text-align: center;
+        margin: 32px 0;
+
+        @include max-lgUp {
+            display: none;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        a {
+            width: 190px;
+            height: 48px;
+            background: $dark_40;
+            border: 1px solid $dark_50;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include max-lgUp {
+                height: 40px;
+            }
+        }
+
+        .fb {
+            color: $fb;
+            margin-right: 10px;
+
+            svg {
+                height: 19px;
+                width: 10px;
+                margin-right: 15px;
+            }
+        }
+
+        .ge {
+            margin-left: 10px;
+            color: $dark_100;
+
+            svg {
+                height: 19px;
+                width: 19px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: $dark_70;
+
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            text-decoration-line: underline;
+            color: $red_20;
+        }
+    }
+
+    h5 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.001em;
+        color: $dark_100;
+        margin-bottom: 10px;
+
+        @include max-lgUp {
+            font-size: 16px;
+        }
+
+        @include max-lg {
+            font-size: 14px;
+        }
+    }
+
+    .timer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 48px;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            color: $red_10;
+        }
+    }
+}

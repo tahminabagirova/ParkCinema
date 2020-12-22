@@ -1,0 +1,303 @@
+#imax {
+    .leftSideTech {
+        width: 100%;
+        height: 533px;
+        margin-bottom: 167px;
+
+        @include max-lg {
+            margin-bottom: 10px;
+        }
+
+        @include max-tabletOnly {
+            height: 300px;
+        }
+
+        @include max-tablet {
+            height: 230px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .rightSideTech {
+        padding-left: 57px;
+
+        @include max-lg {
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            color: $dark_120;
+            margin-bottom: 24px;
+
+            @include max-lg {
+                margin: 15px 0;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: $dark_100;
+
+            @include max-lg {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .movieTech {
+        height: 445;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @include max-tabletOnly {
+            height: 300px;
+        }
+
+        @include max-tablet {
+            height: 230px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .imax-about-txt {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: $dark_120;
+        margin-bottom: 72px;
+
+        @include max-lg {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .col-lg-12,
+    .col-lg-24 {
+        @include max-lg {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .leftSideHall {
+        padding-right: 57px;
+        margin-top: 160px;
+
+        @include max-lg {
+            margin-top: 10px;
+        }
+
+        @include max-lg {
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            color: $dark_120;
+            margin-bottom: 20px;
+
+            @include max-lg {
+                margin: 15px 0;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: $dark_100;
+
+            @include max-lg {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .rightSideHall {
+        width: 100%;
+        height: 406px;
+        margin-top: 160px;
+
+        @include max-lg {
+            margin-top: 10px;
+        }
+
+        @include max-tabletOnly {
+            height: 300px;
+        }
+
+        @include max-tablet {
+            height: 230px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .cinema-imax {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: $dark_120;
+        margin: 160px 0 40px;
+
+        @include max-lg {
+            font-size: 20px;
+            margin:50px 0 30px;
+        }
+    }
+
+    .cinemaItemImax {
+        width: 100%;
+        height: 254px;
+        margin-bottom: 20px;
+
+        @include max-sm {
+            height: 150px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .contactCinema {
+        margin-left: 65px;
+
+        @include max-lg {
+            margin: 0;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 43px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+            color: $dark_100;
+            margin-bottom: 24px;
+
+            @include max-lg {
+                font-size: 20px;
+            }
+
+            @include max-sm{
+                margin-bottom: 12px;
+            }
+        }
+
+        .contactItems {
+            .line {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+
+                @include max-sm{
+                    margin-bottom: 4px;
+                }
+            }
+
+            img {
+                height: 15px;
+                width: 15px;
+                margin-right: 8px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                color: $dark_100;
+
+                @include max-sm{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        button {
+            padding: 12px 30px;
+            margin: 55px 0 65px;
+
+            @include max-lg {
+                margin: 24px 0 24px;
+            }
+        }
+
+        .contactItemsSecond {
+            .line {
+                margin-bottom: 24px;
+
+                @include max-lg {
+                    margin-bottom: 14px;
+                }
+
+                h5 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.0015em;
+                    color: $dark_70;
+                    margin-bottom: 10px;
+
+
+                    @include max-lg {
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    color: $dark_120;
+
+                    @include max-lg{
+                        font-size: 14px;
+                    }
+
+                }
+            }
+        }
+    }
+}

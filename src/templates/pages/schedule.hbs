@@ -1,0 +1,346 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body class="dark">
+
+    {{> common/header }}
+
+    {{> section/filter}}
+
+    {{!-- SCHEDULE --}}
+    <section id="schedule">
+        <div class="contentContainer">
+            <div id="pageFirstStep">
+                {{!-- date --}}
+                <div class="date">
+                    <div id="dateSchedule" class="dateInner">
+                        <div class="owl-carousel owl-theme">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d1" value="1"
+                                    checked>
+                                <label class="form-check-label" for="d1">
+                                    <p>Today</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d2" value="2">
+                                <label class="form-check-label" for="d2">
+                                    <p>Mar 20</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d3" value="3">
+                                <label class="form-check-label" for="d3">
+                                    <p>Mar 21</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d4" value="4">
+                                <label class="form-check-label" for="d4">
+                                    <p>Mar 22</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d5" value="5">
+                                <label class="form-check-label" for="d5">
+                                    <p>Mar 23</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="movie-date" id="d55" value="5">
+                                <label class="form-check-label" for="d55">
+                                    <p>Mar 24</p>
+                                    <span>DAY</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- cinemas --}}
+                <div class="cinemasItems">
+                    <div class="dropDownCinemas">
+                        <div class="items-top-footer drop-down-key">
+                            <div class="inner-items-top-footer">
+                                <p>All cinemas</p>
+                                <svg viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 1.50416L1.27593 0L7.5 5.39074L13.7241 0L15 1.50416L7.5 8L0 1.50416Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="drop-down-language">
+                            <ul class="dropdownUl">
+                                <li class="active" data-id="">
+                                    Flame Towers
+                                </li>
+                                <li data-id="">
+                                    Park Bulvar
+                                </li>
+                                <li data-id="">
+                                    Metro Park
+                                </li>
+                                <li data-id="">
+                                    Zagulba MAll
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <div class="cBox">
+                            <div class="form-check all">
+                                <input class="form-check-input" type="radio" name="cinemas" id="all" value="all"
+                                    checked>
+                                <label class="form-check-label all" for="all">
+                                    <p>ALL</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="cinemaChecks">
+                            <div class="form-check flame-towers">
+                                <input class="form-check-input" type="radio" name="cinemas" id="flame-towersS"
+                                    value="flame-towers">
+                                <label class="form-check-label blue" for="flame-towersS">
+                                    FLAME TOWERS
+                                </label>
+                            </div>
+
+                            <div class="form-check park-bulvar">
+                                <input class="form-check-input" type="radio" name="cinemas" id="park-bulvarR"
+                                    value="park-bulvar">
+                                <label class="form-check-label tomato" for="park-bulvarR">
+                                    PARK BULVAR
+                                </label>
+                            </div>
+
+                            <div class="form-check metro-park">
+                                <input class="form-check-input" type="radio" name="cinemas" id="metro-parkK"
+                                    value="metro-park">
+                                <label class="form-check-label green" for="metro-parkK">
+                                    METRO PARK
+                                </label>
+                            </div>
+
+                            <div class="form-check zagulba-mall">
+                                <input class="form-check-input" type="radio" name="cinemas" id="zagulba-mallL"
+                                    value="zagulba-mall">
+                                <label class="form-check-label orange" for="zagulba-mallL">
+                                    ZAGULBA MALL
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- filter advanced --}}
+                <div class="categoryFilter">
+                    <div id="sessionInner" class="sessionInner">
+                        <div class="line">
+                            <div class="first">
+                                <img src="../assets/formats.svg" alt="">
+                                <span>Formats</span>
+                            </div>
+                            <div class="cBox">
+                                <div class="form-check all">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="aLL" value="4"
+                                        checked>
+                                    <label class="form-check-label all" for="aLL">
+                                        <p>ALL</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sessionBar desk-version">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="permanet"
+                                        value="4">
+                                    <label class="form-check-label" for="permanet">
+                                        <p>2D</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="temporary"
+                                        value="5">
+                                    <label class="form-check-label" for="temporary">
+                                        <p>3D</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="imax" value="5">
+                                    <label class="form-check-label" for="imax">
+                                        <p>IMAX</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="dolby" value="5">
+                                    <label class="form-check-label" for="dolby">
+                                        <p>DOLBY</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="laser" value="5">
+                                    <label class="form-check-label" for="laser">
+                                        <p>LASER</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="first">
+                                <img src="../assets/languages.svg" alt="">
+                                <span>Languages</span>
+                            </div>
+                            <div class="cBox">
+                                <div class="form-check all">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="alllang"
+                                        value="4" checked>
+                                    <label class="form-check-label all" for="alllang">
+                                        <p>ALL</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sessionBar desk-version">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="azerbaijan"
+                                        value="4">
+                                    <label class="form-check-label" for="azerbaijan">
+                                        <p>AZERBAIJAN</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="russian"
+                                        value="5">
+                                    <label class="form-check-label" for="russian">
+                                        <p>RUSSIAN</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="english"
+                                        value="5">
+                                    <label class="form-check-label" for="english">
+                                        <p>ENGLISH</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="first">
+                                <img src="../assets/subtitles.svg" alt="">
+                                <span>Subtitles</span>
+                            </div>
+                            <div class="cBox">
+                                <div class="form-check all">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="alllan" value="4"
+                                        checked>
+                                    <label class="form-check-label all" for="alllan">
+                                        <p>ALL</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sessionBar desk-version">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="aze" value="4">
+                                    <label class="form-check-label" for="aze">
+                                        <p>AZE</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="rus" value="5">
+                                    <label class="form-check-label" for="rus">
+                                        <p>RUS</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="eng" value="5">
+                                    <label class="form-check-label" for="eng">
+                                        <p>ENG</p>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="movie-date" id="turk" value="5">
+                                    <label class="form-check-label" for="turk">
+                                        <p>TURK</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- advanced search --}}
+                <div class="advanced-search">
+                    <div class="inner">
+                        <h3>Advanced search</h3>
+                        <svg viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1.50416L1.27593 0L7.5 5.39074L13.7241 0L15 1.50416L7.5 8L0 1.50416Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="filterMobile">
+                    <div class="left">
+                        <h3>Today</h3>
+                        <p>All cinemas</p>
+                    </div>
+                    <div class="right filterButton">
+                        <img src="../assets/Filter.svg" alt="">
+                    </div>
+                </div>
+                {{!-- INNER --}}
+                <div class="row">
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                    <div class="col-xxl-8 col-lg-12 col-sm-24 col-12">
+                        {{> section/schedule-card}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

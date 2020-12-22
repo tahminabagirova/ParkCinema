@@ -1,0 +1,95 @@
+.watched-card {
+    margin-bottom: 40px;
+    
+    .poster {
+        width: 173px;
+        height: 257px;
+        position: relative;
+
+        @include max-sm {
+            width: 163px;
+            height: 242px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .overlay-poster {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.493);
+            // display: none;
+
+            .inner {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .content {
+        margin-top: 10px;
+
+        .line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+
+            h4 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.005em;
+                color: $dark_120;
+
+                @include max-sm{
+                    font-size: 14px;
+                }
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                letter-spacing: 0.005em;
+                color: $dark_100;
+                width: 30px;
+                height: 18px;
+                border: 1px solid $dark_100;
+                margin-left: 12px;
+
+                @include max-sm{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            color: $dark_100;
+        }
+    }
+}

@@ -1,0 +1,188 @@
+#quickBuy {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    background: rgba(15, 16, 20, 0.7);
+    mix-blend-mode: normal;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: $tr;
+
+    @include max-lg {
+        top: 64px;
+    }
+
+    @include max-sm {
+        top: 56px;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+
+        .quickBuyModal {
+            // transform: scaleX(1);
+            right: 0;
+        }
+    }
+
+    .quickBuyModal {
+        position: fixed;
+        right: -25%;
+        height: 100%;
+        // right: 0;
+        background: $dark_10;
+        backdrop-filter: blur(4px);
+        padding: 17px 34px 40px 40px;
+        transition: $tr;
+        overflow: auto;
+
+        @include max-md {
+            width: 100%;
+            top: 125px;
+            padding: 16px 16px 24px 16px;
+            right: -50%;
+            overflow-y: auto;
+            height: calc(100% - 125px);
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: $dark;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $red_10;
+            border-radius: 4px;
+        }
+
+        .miniHeader {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 47px;
+
+            @include max-lgUp {
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.0015em;
+                color: $dark_90;
+
+                @include max-lgUp {
+                    font-size: 18px;
+                }
+            }
+
+            .closeQuickBuy {
+                cursor: pointer;
+                padding: 8px;
+
+                &:hover {
+                    svg rect {
+                        fill: $red_20;
+                    }
+                }
+
+                &:active {
+                    svg rect {
+                        fill: $red_10;
+                    }
+                }
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+
+        .movies {
+            .languageSelect {
+                position: relative;
+                transition: $tr;
+                margin-bottom: 42px;
+
+                @include max-lgUp {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .session {
+            #sessionInner {
+                margin-bottom: 60px;
+
+                @include max-lgUp {
+                    margin-bottom: 50px;
+                }
+
+                @include max-sm {
+                    margin-bottom: 28px;
+                }
+
+                .sessionBar {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+
+                .form-check {
+                    label {
+                        width: 82px;
+                        height: 56px;
+                        margin-right: 10px;
+
+                        @include max-lgUp {
+                            height: 40px;
+                        }
+
+                        @include max-md {
+                            width: unset;
+                        }
+
+                    }
+
+                    &:last-child {
+                        label {
+                            margin: 0;
+
+                            @include max-lgUp {
+                                display: none;
+                            }
+
+                            @include max-md {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .btnContinue {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                padding: 15px 40px;
+
+                @include max-lgUp {
+                    padding: 11px 34px;
+                }
+
+                @include max-md {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

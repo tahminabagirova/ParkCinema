@@ -1,0 +1,701 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body class="dark">
+
+    {{> common/header }}
+
+
+    {{!-- PROFILE --}}
+    <section id="profile">
+        <div class="contentContainerSecond">
+            <div class="innerProfile">
+                {{!-- sidebar --}}
+                <div class="sidebar-profile">
+                    <div class="top-side">
+                        <div class="profile-img">
+                            <img src="../assets/agZwx4nb_400x400.jpg" alt="">
+                        </div>
+                        <div class="edit-profile-button">
+                            <a href="edit-profile.html" class="buttonNormal">
+                                EDIT PROFILE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom-side">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#notification" class="tab-item active">
+                                    <svg viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 20C9.1 20 10 19.1 10 18H6C6 19.1 6.9 20 8 20ZM14 14V9C14 5.93 12.37 3.36 9.5 2.68V2C9.5 1.17 8.83 0.5 8 0.5C7.17 0.5 6.5 1.17 6.5 2V2.68C3.64 3.36 2 5.92 2 9V14L0 16V17H16V16L14 14ZM12 15H4V9C4 6.52 5.51 4.5 8 4.5C10.49 4.5 12 6.52 12 9V15Z" />
+                                    </svg>
+                                    Notifications</a>
+
+                            </li>
+                            <li>
+                                <a href="#views" class="tab-item">
+                                    <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 13.7C7.0213 13.7 3.58149 11.375 1.96254 8C3.58149 4.62505 7.0213 2.3 11 2.3C14.9787 2.3 18.4185 4.62505 20.0375 8C18.4185 11.375 14.9787 13.7 11 13.7ZM11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5ZM11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" />
+                                    </svg>
+                                    My views
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#later" class="tab-item">
+                                    <svg viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.2239 1.92C15.1439 1.92 16.0079 2.272 16.6639 2.92C17.3199 3.576 17.6879 4.44 17.6879 5.352C17.6879 6.264 17.3279 7.128 16.6639 7.784L9.9999 14.368L3.3439 7.784C2.6799 7.128 2.3199 6.264 2.3199 5.344C2.3199 4.432 2.6799 3.568 3.3439 2.912C3.9919 2.272 4.8559 1.92 5.7759 1.92C6.6959 1.92 7.5679 2.272 8.2159 2.92L8.6479 3.352L9.9999 4.68L11.3519 3.344L11.7839 2.912C12.4319 2.272 13.2959 1.92 14.2239 1.92ZM14.2239 0C12.8559 0 11.4799 0.52 10.4399 1.552L9.9999 1.984L9.5679 1.552C8.5199 0.52 7.1519 0 5.7759 0C4.4079 0 3.0319 0.52 1.9919 1.552C0.967902 2.568 0.399902 3.92 0.399902 5.344C0.399902 6.776 0.967902 8.12 1.9919 9.144L9.5359 16.608C9.6639 16.736 9.8319 16.8 9.9999 16.8C10.1679 16.8 10.3359 16.736 10.4639 16.608L18.0079 9.144C19.0319 8.128 19.5999 6.776 19.5999 5.344C19.5999 3.912 19.0319 2.568 18.0079 1.552C16.9679 0.52 15.5919 0 14.2239 0Z" />
+                                    </svg>
+                                    Watch later
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#invite" class="tab-item">
+                                    <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 8C16.21 8 18 6.21 18 4C18 1.79 16.21 0 14 0C11.79 0 10 1.79 10 4C10 6.21 11.79 8 14 8ZM5 6V3H3V6H0V8H3V11H5V8H8V6H5ZM14 10C11.33 10 6 11.34 6 14V16H22V14C22 11.34 16.67 10 14 10Z" />
+                                    </svg>
+                                    Invite a friend
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="log-out-parent">
+                            <div class="log-out">
+                                <svg viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.1156 0.5H5.89579C5.41616 0.5 5.01147 0.905 5.01147 1.385V5.27H6.78011V2.27H18.2463V21.215H6.78011V18.215H5.01147V22.1C5.01147 22.595 5.41616 23 5.89579 23H19.1156C19.5953 23 19.9999 22.595 19.9999 22.115V1.385C19.9999 0.905 19.6102 0.5 19.1156 0.5Z" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.21714 12.59H12.4908V10.91H4.21714L6.36049 9.125L5.01153 8L0.5 11.75L5.01153 15.5L6.36049 14.375L4.21714 12.59Z" />
+                                </svg>
+                                <p>Log out</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- main --}}
+                <div class="main-profile tab-content" id="main-profile-id">
+                    {{!-- Top side profile --}}
+                    <div class="top-side">
+                        <div class="left-side">
+                            <p>My Park Cinema</p>
+                            <h1>Tahmina Bagirova</h1>
+                            <h4>ID: 200 125</h4>
+                            <p>tahmina.b@labrin.tech</p>
+                            <p>+994 77 777 77 77</p>
+                        </div>
+                        <div class="right-side">
+                            <div class="bonuse-card">
+                                <div class="line">
+                                    <p>Platinum card: <span> 2341 0024</span>
+                                    </p>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
+                                            fill="#566178" />
+                                    </svg>
+                                </div>
+                                <p>Balance:</p>
+                                <div class="line">
+                                    <h4>100</h4>
+                                    <button class="buttonOutline">Use bonuses</button>
+                                </div>
+                            </div>
+
+                            <button class="buttonContact">
+                                PROMO CODE ACTIVATION
+                            </button>
+                        </div>
+                    </div>
+
+                    {{!-- tab body --}}
+                    <div class="main-top tab-pane tab-body" id="notification">
+                        <div class="bottom-side">
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonOutline">buy tickets</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Rectangle 1200.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>After 3 days, the pre-sale of tickets for the film <span>“Green Book”</span>
+                                            begins</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonNormal">view more</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <span>week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonOutline">buy tickets</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Rectangle 1200.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>After 3 days, the pre-sale of tickets for the film <span>“Green Book”</span>
+                                            begins</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonNormal">view more</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <span>week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonOutline">buy tickets</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Rectangle 1200.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>After 3 days, the pre-sale of tickets for the film <span>“Green Book”</span>
+                                            begins</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonNormal">view more</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <span>week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonOutline">buy tickets</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="poster">
+                                    <img src="../assets/Rectangle 1200.svg" alt="">
+                                </div>
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>After 3 days, the pre-sale of tickets for the film <span>“Green Book”</span>
+                                            begins</p>
+                                    </div>
+                                    <div class="button">
+                                        <button class="buttonNormal">view more</button>
+                                        <span>2h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{!-- noti card --}}
+                            <div class="notification-card">
+                                <div class="inner">
+                                    <div class="content">
+                                        <span>Manchester U. - Arsenal </span>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="button">
+                                        <span>week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-top tab-pane tab-body" id="views">
+                        <div class="row-parent">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watched-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watched-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watched-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watched-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watched-card}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-top tab-pane tab-body" id="later">
+                        <div class="row-parent">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-12">
+                                    {{> section/watch-later-card}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-top tab-pane tab-body active" id="invite">
+                        <div class="ie-fs-inner-desktop">
+                            <form action="">
+                                <h3>Invite your friends</h3>
+                                <div class="inputGroup">
+                                    <label for="">Email adress</label>
+                                    <div class="inner">
+                                        <input type="text" placeholder="Enter emaile address">
+                                        <button class="buttonRed">invite</button>
+                                    </div>
+                                </div>
+                                <h4>More ways to invite </h4>
+                                <div class="inputGroup">
+                                    <div class="inner">
+                                        <input type="text" value="https://parkcinema.az/lindlhak45">
+                                        <button class="buttonNormal copy-link-desk">
+                                            <svg viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9 5C1.9 3.29 3.29 1.9 5 1.9H9V0H5C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10H9V8.1H5C3.29 8.1 1.9 6.71 1.9 5ZM6 6H14V4H6V6ZM15 0H11V1.9H15C16.71 1.9 18.1 3.29 18.1 5C18.1 6.71 16.71 8.1 15 8.1H11V10H15C17.76 10 20 7.76 20 5C20 2.24 17.76 0 15 0Z"
+                                                    fill="#E2EDFF" />
+                                            </svg>
+                                            <p>copy link</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <h5>Share on:</h5>
+                                <div class="icons">
+                                    <a href="">
+                                        <img src="../assets/facebook (2) 1.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="../assets/twitter (1) 1.svg" alt="">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- PROFILE MOBILE --}}
+    <section id="profile-mobile">
+        <div class="contentContainerSecond">
+            <div class="profile-card">
+                <div class="profile-photo">
+                    <img src="../assets/agZwx4nb_400x400.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>Tahmina Bagirova</h1>
+                    <h4>ID: 200 125</h4>
+                    <p>tahmina.b@labrin.tech</p>
+                    <p>+994 77 777 77 77</p>
+                </div>
+            </div>
+
+            <a href="edit-profile.html" class="buttonContact">edit profile</a>
+
+            <div class="carousel-profile-page">
+                <div class="owl-carousel">
+                    <a href="#bonus" class="item active">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>Bonus card</p>
+                    </a>
+                    <a href="#promo" class="item">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>Promo code</p>
+                    </a>
+                    <a href="#noti" class="item">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>Notification</p>
+                    </a>
+                    <a href="#myviews" class="item">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>My views</p>
+                    </a>
+                    <a href="#watchlater" class="item">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>Watch later</p>
+                    </a>
+                    <a href="#invitefds" class="item">
+                        <img src="../assets/Card.svg" alt="">
+                        <p>Invite a friend</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobile-tab-body tab-content" id="tab-body-mobile">
+                <div class="tab-body tab-pane active" id="bonus">
+                    <div class="bonuse-card-container">
+                        <button class="buttonOutline">add bonus card</button>
+                    </div>
+                    {{!-- bonuse card --}}
+                    <div class="add-bonuse-card-wrapper">
+                        {{!-- header --}}
+                        <div class="header">
+                            <h3>Add bonus card</h3>
+                            <div class="times close-add-bonuse-card">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.77783" width="20.1132" height="2.51415" transform="rotate(45 1.77783 0)"
+                                        fill="#566178" />
+                                    <rect y="14.2227" width="20.1132" height="2.51416" transform="rotate(-45 0 14.2227)"
+                                        fill="#566178" />
+                                </svg>
+                            </div>
+                        </div>
+                        {{!-- body --}}
+                        <div class="body">
+                            <form action="">
+                                <div class="inputGroup">
+                                    <label for="">Card number</label>
+                                    <input type="text" placeholder="input">
+                                </div>
+                                <div class="buttons">
+                                    <button class="buttonNormal cancel-add-bonuse-card">cancel</button>
+                                    <button class="buttonRed activation-add-bonuse-card">activation</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    {{!-- choose where send --}}
+                    <div class="choose-where-send">
+                        <div class="header">
+                            <div class="back">
+                                <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.250073 9.99904L9.90111 19.6348L11.538 17.7898L5.01087 11.2731L21.6462 11.2731L21.6462 8.72501L5.01087 8.72501L11.538 2.20826L9.90112 0.363316L0.250073 9.99904Z"
+                                        fill="#566178" />
+                                </svg>
+                            </div>
+                            <div class="times close-choose-where-send">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.77783" width="20.1132" height="2.51415" transform="rotate(45 1.77783 0)"
+                                        fill="#566178" />
+                                    <rect y="14.2227" width="20.1132" height="2.51416" transform="rotate(-45 0 14.2227)"
+                                        fill="#566178" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h1>Hello, Tahmina Bagirova</h1>
+                            <h3>Card number:</h3>
+                            <h2>234124</h2>
+                            <h3>Verify your crad</h3>
+                            <p>Сhoose where to send the verification code</p>
+                            <div class="checkbox-wrapper">
+                                <div class="form-check top-btn payment-at-the-door">
+                                    <input type="radio" name="client-type" id="payment-at-the-door"
+                                        value="payment-at-the-door" checked>
+                                    <label class="form-check-label" for="payment-at-the-door">
+                                        (+994) ** *** ** ** *
+                                    </label>
+                                </div>
+
+                                <div class="form-check top-btn payment-online">
+                                    <input class="form-check-input" type="radio" name="client-type" id="payment-online"
+                                        value="payment-online">
+                                    <label class="form-check-label" for="payment-online">
+                                        h****@labrin.tech
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body tab-pane" id="promo">
+                    <div class="promo-code-container">
+                        <button class="buttonContact promo-code">promo code activation </button>
+                        <div class="inputGroup">
+                            <input type="text" placeholder="input">
+                        </div>
+                    </div>
+                    {{!-- activate promo code --}}
+                    <div class="activate-promo-code">
+                        <button class="buttonRed activate-promo-code-button">activate</button>
+                    </div>
+                    {{!-- promo code activated --}}
+                    <div class="promo-code-activated">
+                        <div class="header">
+                            <h3>Prome code activated</h3>
+                            <div class="times close-promo-code">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.77783" width="20.1132" height="2.51415" transform="rotate(45 1.77783 0)"
+                                        fill="#566178" />
+                                    <rect y="14.2227" width="20.1132" height="2.51416" transform="rotate(-45 0 14.2227)"
+                                        fill="#566178" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h1>+20 bonuses</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body tab-pane" id="noti">
+                    <div class="notifications-mobile">
+                        <div class="noti-mobile">
+                            <div class="body">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="top-side">
+                                        <h5>Manchester U. - Arsenal</h5>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="bottom-side">
+                                        <span>2 h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buttonOutline">buy tickets</button>
+                        </div>
+                        <div class="noti-mobile">
+                            <div class="body">
+                                <div class="content">
+                                    <div class="top-side">
+                                        <h5>Discounts for March 8th!</h5>
+                                        <p>Come together and get <span>20% discount.</span></p>
+                                    </div>
+                                    <div class="bottom-side">
+                                        <span>week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buttonNormal">view more</button>
+                        </div>
+                        <div class="noti-mobile">
+                            <div class="body">
+                                <div class="poster">
+                                    <img src="../assets/Group 203.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="top-side">
+                                        <h5>Manchester U. - Arsenal</h5>
+                                        <p>Don’t miss the game on April 10, buy tickets now!</p>
+                                    </div>
+                                    <div class="bottom-side">
+                                        <span>2 h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buttonOutline">buy tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body tab-pane" id="myviews">
+                    <div class="my-views-mobile">
+                        <div class="row">
+                            <div class="col-12">
+                                {{> section/watched-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watched-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watched-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watched-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watched-card}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body tab-pane" id="watchlater">
+                    <div class="watch-later-mobile">
+                        <div class="row">
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                            <div class="col-12">
+                                {{> section/watch-later-card}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body tab-pane" id="invitefds">
+                    <div class="ie-fs-inner-desktop">
+                        <form action="">
+                            <div class="inputGroup">
+                                <label for="">Email adress</label>
+                                <div class="inner">
+                                    <input type="text" placeholder="Enter emaile address">
+                                    <button class="buttonRed">invite</button>
+                                </div>
+                            </div>
+                            <h4>More ways to invite </h4>
+                            <div class="inputGroup">
+                                <div class="inner">
+                                    <input type="text" value="https://parkcinema.az/lindlhak45">
+                                    <button class="buttonNormal copy-link-desk">
+                                        <svg viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.9 5C1.9 3.29 3.29 1.9 5 1.9H9V0H5C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10H9V8.1H5C3.29 8.1 1.9 6.71 1.9 5ZM6 6H14V4H6V6ZM15 0H11V1.9H15C16.71 1.9 18.1 3.29 18.1 5C18.1 6.71 16.71 8.1 15 8.1H11V10H15C17.76 10 20 7.76 20 5C20 2.24 17.76 0 15 0Z"
+                                                fill="#E2EDFF" />
+                                        </svg>
+                                        <p>copy link</p>
+                                    </button>
+                                </div>
+                                <button class="buttonNormal copy-link-mobile">
+                                    <svg viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.9 5C1.9 3.29 3.29 1.9 5 1.9H9V0H5C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10H9V8.1H5C3.29 8.1 1.9 6.71 1.9 5ZM6 6H14V4H6V6ZM15 0H11V1.9H15C16.71 1.9 18.1 3.29 18.1 5C18.1 6.71 16.71 8.1 15 8.1H11V10H15C17.76 10 20 7.76 20 5C20 2.24 17.76 0 15 0Z"
+                                            fill="#E2EDFF" />
+                                    </svg>
+                                    <p>copy link</p>
+                                </button>
+                            </div>
+                            <h5>Share on:</h5>
+                            <div class="icons">
+                                <a href="">
+                                    <img src="../assets/facebook (2) 1.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/twitter (1) 1.svg" alt="">
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

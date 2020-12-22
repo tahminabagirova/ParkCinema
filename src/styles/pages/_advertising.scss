@@ -1,0 +1,201 @@
+#advertising {
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.0015em;
+        color: $dark_120;
+        margin-bottom: 32px;
+
+        @include max-lg {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .first-img {
+        height: 529px;
+        width: 100%;
+        margin-bottom: 56px;
+
+        @include max-lg {
+            height: 420px;
+            margin-bottom: 24px;
+        }
+
+        @include max-md {
+            height: 320px;
+        }
+
+        @include max-sm {
+            height: 180px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .first-img-p {
+        width: 882px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark_100;
+        margin: 0 auto 100px;
+
+        @include max-lg {
+            width: 100%;
+            margin: 0 auto 40px;
+            font-size: 14px;
+        }
+    }
+
+    .second-img {
+        height: 100%;
+        width: 100%;
+
+        @include max-lgDown{
+            height:200px;
+            margin-bottom: 24px;
+        }
+
+        @include max-sm{
+            height:180px;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: $dark_120;
+        margin-bottom: 24px;
+
+        @include max-lg {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+
+    ul {
+        li {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: $dark_100;
+            margin-bottom: 24px;
+
+            @include max-lg {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .download-pdf-advertising {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        text-decoration-line: underline;
+        color: $red_20;
+        margin-top: 32px;
+
+        @include max-lg{
+            font-size: 14px;
+            margin-top: 24px;
+        }
+    }
+
+    .last-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.0015em;
+        color: $dark_70;
+        margin-bottom: 32px;
+        margin-top: 100px;
+
+        @include max-lg{
+            font-size:18px;
+            margin-top: 32px;
+        }
+    }
+
+    .tel-advertising {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        svg {
+            height: 30px;
+            width: 30px;
+            margin-right: 15px;
+
+            @include max-lg{
+                height:24px;
+                width:24px;
+                margin-right: 8px;
+            }
+
+            @include max-sm{
+                height:20px;
+                width:20px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.0025em;
+            color: $dark_120;
+
+            @include max-lg{
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            @include max-sm{
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .contact-mail {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.001em;
+        text-decoration-line: underline;
+        color: $red_20;
+        margin-bottom: 64px;
+
+        @include max-lg{
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+    }
+}

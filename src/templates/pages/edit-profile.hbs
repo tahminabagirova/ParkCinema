@@ -1,0 +1,103 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body class="dark">
+
+    {{> common/header }}
+
+    {{!-- EDIT PROFILE --}}
+    <section id="edit-profile">
+        <div class="contentContainerThird">
+            <div class="inner">
+                <div class="header">
+                    <div class="back-button">
+                        <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.71887 11.524L11.9852 17.7804L10.0159 20L0 10L10.0159 0L11.9852 2.2196L5.71887 8.47597H22V11.524H5.71887Z"
+                                fill="#566178" />
+                        </svg>
+                    </div>
+                    <h2>Edit profile</h2>
+                </div>
+                <form action="" class="body">
+                    <div class="body-top-side">
+                        <div class="left-side">
+                            <div class="inputGroup">
+                                <label for="">Name</label>
+                                <input type="text" name="" id="" placeholder="Tahmina">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="">Surname</label>
+                                <input type="text" name="" id="" placeholder="Bagirova">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="">Email</label>
+                                <input type="text" name="" id="" placeholder="tahmina.b@labrin.tech">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="">Phone</label>
+                                <input type="number" name="" id="" placeholder="+994 77 777 77 77">
+                            </div>
+                            <div class="inputGroup passwordGroup">
+                                <label for="">Password</label>
+                                <div class="d-flex">
+                                    <input type="password" name="" id="" placeholder="***********">
+                                    <a href="password-change.html" class="buttonNormal">change</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <h3>Profile image</h3>
+                            <div class="profile-image-edit">
+                                <img src="../assets/agZwx4nb_400x400.jpg" alt="">
+                                <div class="overlay-profile-image-edit">
+                                    <div class="inner-overlay">
+                                        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.9452 0V13.2277H30V16.7723H16.9452V30H13.0548V16.7723H0V13.2277H13.0548V0H16.9452Z"
+                                                fill="#BAC3D4" />
+                                        </svg>
+                                        <p>Reset</p>
+                                    </div>
+                                </div>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-bottom-side">
+                        <h3>Settings</h3>
+                        <div class="checkboxes">
+                            <div class="check">
+                                <input type="checkbox" id="a" checked />
+                                <label for="a"></label>
+                                <p class="p-item">Subscribe to the newsletter and receive notifications</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" id="b" />
+                                <label for="b"></label>
+                                <p class="p-item">Send 4 digit code to Email</p>
+                            </div>
+                        </div>
+                        <div class="save-button">
+                            <button class="buttonRed">save changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

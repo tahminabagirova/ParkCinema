@@ -1,0 +1,70 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 499px,
+  md: 768px,
+  lg: 992px,
+  mm: 1025px,
+  xl: 1281px,
+  xxl:1599px
+);
+
+// @import '~font-awesome/css/font-awesome.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "vendors/bootstrap";
+@import "molecules/sprite";
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
+
+
+//FONT
+@import 'font/stylesheet.css';
+
+
+//STYLES
+@import 'mixin';
+@import 'variables';
+@import 'general';
+
+
+// UI-KIT
+@import 'UI-KIT/button';
+@import 'UI-KIT/input';
+@import 'UI-KIT/checkbox';
+
+
+// PAGES
+@import 'pages/homepage';
+@import 'pages/schedule';
+@import 'pages/soon';
+@import 'pages/campaigns';
+@import 'pages/campaign';
+@import 'pages/combo-menu';
+@import 'pages/imax';
+@import 'pages/cinemas';
+@import 'pages/about';
+@import 'pages/advertising';
+@import 'pages/contact';
+@import 'pages/buy-ticket';
+@import 'pages/profile';
+@import 'pages/edit-profile';
+@import 'pages/password-change';
+@import 'pages/register';
+@import 'pages/terms&conditions';
+@import 'pages/cinema';
+
+
+//SECTION
+@import 'section/header';
+@import 'section/pop-up-video-src';
+@import 'section/quick-buy';
+@import 'section/menu';
+@import 'section/soon-card';
+@import 'section/campaigns-card';
+@import 'section/menu-card';
+@import 'section/imax-about-card';
+@import 'section/schedule-card';
+@import 'section/filter';
+@import 'section/ticket-card';
+@import 'section/combo-menu-card';
+@import 'section/watched-card';
+@import 'section/watch-later-card';

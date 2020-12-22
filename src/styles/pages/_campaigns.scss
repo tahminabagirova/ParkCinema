@@ -1,0 +1,27 @@
+#campaigns {
+    .campaignsInner {
+        margin-top: 24px;
+        overflow: hidden;
+
+        .cards {
+            display: flex;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            width: calc(100% + 80px);
+            margin: 0 -40px;
+
+            @include max-md {
+                width: calc(100% + 60px);
+                margin: 0 -30px;
+            }
+
+            @include max-tabletOnly {
+                justify-content: center;
+            }
+
+            @include max-sm {
+                justify-content: center;
+            }
+        }
+    }
+}

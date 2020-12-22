@@ -1,0 +1,97 @@
+.campaignsCard {
+    width: calc(100% / 3 - 80px);
+    display: block;
+    margin: 0 40px 20px;
+    transition: $tr;
+    border: 1px solid transparent;
+
+    @include min-lgUp {
+        width: calc(100% / 5 - 80px);
+    }
+
+    @include max-lgDown {
+        width: calc(100% / 2 - 80px);
+    }
+
+    @include max-md {
+        width: calc(100% / 2 - 60px);
+        margin: 0 25px 10px 25px;
+    }
+
+    @include max-sm {
+        width: calc(100% / 2 - 30px);
+        margin: 0 10px 10px 10px;
+    }
+
+    &:hover {   
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+        border: 1px solid $dark_50;
+
+        .topcard{
+            img{
+                opacity: unset;
+            }
+        }
+
+        .bottomCard {
+            background-color: $dark_40;
+        }
+    }
+
+    .topcard {
+        height: 252px;
+        width: 100%;
+        // background: rgba(0, 0, 0, 0.616);
+
+        @include max-sm {
+            height: 190px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+            transition: $tr;
+        }
+    }
+
+    .bottomCard {
+        padding: 20px;
+
+        @include max-sm {
+            padding: 8px 10px 20px;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.001em;
+            color: $dark_100;
+            margin-bottom: 4px;
+
+            @include max-tablet {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: $dark_100;
+            margin-bottom: 4px;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: $dark_70;
+        }
+    }
+}

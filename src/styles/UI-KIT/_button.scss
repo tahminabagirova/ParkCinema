@@ -1,0 +1,211 @@
+.buttonOutline {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: $red_20;
+    border: 1px solid $red_10;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none !important;
+    transition: 0.3s;
+
+    @include max-lg {
+        font-size: 12px;
+    }
+
+    &:hover {
+        color: $dark_40;
+        background: $red;
+        border-color: $red;
+    }
+
+    &.active,
+    &:active {
+        color: $dark_40;
+        background: $red;
+        border-color: $red;
+    }
+}
+
+.buttonNormal {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: $dark_120;
+    background: $dark_40;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.28), 2px 6px 10px rgba(0, 0, 0, 0.22);
+    border: none;
+    outline: none !important;
+    transition: $tr;
+
+    @include max-lgUp {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @include max-md {
+        font-size: 12px;
+    }
+
+    &:hover {
+        color: $red_20;
+        background: $dark_10;
+
+        svg {
+            path {
+                fill: $red_20;
+            }
+        }
+    }
+
+    &.active {
+        color: $dark_120;
+        background: $dark_40;
+
+        svg {
+            path {
+                fill: $dark_100;
+            }
+        }
+    }
+
+    svg {
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+
+        @include max-lg {
+            height: 18px;
+            width: 18px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.buttonRed {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: $dark_120;
+    background-color: $red_10;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.18), 2px 6px 10px rgba(0, 0, 0, 0.12);
+    border: none;
+    outline: none !important;
+    transition: $tr;
+
+    @include max-lgUp {
+        font-size: 14px;
+    }
+
+    @include max-md {
+        font-size: 12px;
+    }
+
+    &:hover {
+        background: $red;
+        color: $dark_120;
+    }
+
+    &.active {
+        background-color: $red_10;
+    }
+
+    svg {
+        width: 13px;
+        height: 12px;
+        margin-left: 10px;
+    }
+}
+
+.buttonContact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.001em;
+    color: $dark_100;
+    background-color: $dark_30;
+    border: 1px solid $dark_50;
+    text-transform: uppercase;
+    transition: $tr;
+    width: 100%;
+    padding: 16px 10px;
+
+    @include max-lg {
+        font-size: 14px;
+    }
+
+    @include max-sm {
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding: 13px 4px;
+    }
+
+    &:hover {
+        background: $dark_40;
+        border-color: $dark_50;
+        color: $dark_100;
+    }
+
+    &.active,
+    &:active {
+        background: $dark_40;
+        color: $dark_120;
+        border-color: $dark_70;
+    }
+
+}
+
+.buttonOutlineLight {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: $dark_10;
+    border: 1px solid $dark;
+    box-sizing: border-box;
+    background-color: white;
+    outline: none !important;
+    transition: 0.3s;
+
+    @include max-lg {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $dark_120;
+        background: $dark;
+        border-color: $dark;
+    }
+}

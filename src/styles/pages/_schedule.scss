@@ -1,0 +1,196 @@
+#schedule {
+    height: fit-content;
+    width: 100%;
+
+    #pageFirstSteP {
+        margin-top: 20px;
+    }
+
+    #dateSchedule {
+        width: 525px;
+        margin-bottom: 20px !important;
+
+        @include max-tablet {
+            width: 100%;
+        }
+
+        .owl-next {
+            right: -52px;
+
+            @include max-lgUp {
+                right: -30px;
+            }
+        }
+    }
+
+    .categoryFilter,
+    .cinemasItems,
+    .date {
+        @include max-sm {
+            display: none;
+        }
+    }
+
+    .advanced-search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 44px;
+        margin-bottom: 67px;
+
+        @include max-sm {
+            display: none;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                h3 {
+                    color: $red_20;
+                }
+
+                svg path {
+                    fill: $red_20;
+                }
+            }
+
+            &.active {
+                h3 {
+                    color: $red_10;
+                }
+
+                svg {
+                    transform: rotate(180deg);
+
+                    path {
+                        fill: $red_10;
+                    }
+                }
+            }
+
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.001em;
+                color: $dark_100;
+                margin-right: 8px;
+                transition: $tr;
+
+            }
+
+            svg {
+                width: 12px;
+                height: 4px;
+
+                path {
+                    fill: $dark_100;
+                    transition: $tr;
+                }
+            }
+        }
+    }
+
+    .filterMobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px 0;
+
+        @include min-sm {
+            display: none;
+        }
+
+        .left {
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.005em;
+                color: $dark_120;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.0025em;
+                color: $dark_100;
+            }
+        }
+
+        .right {
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .row {
+        @include max-lgUp {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .cinemasItems {
+        margin-bottom: 0;
+    }
+
+    //category filter
+    .categoryFilter {
+        display: none;
+
+        #sessionInner {
+            display: flex;
+            flex-direction: column;
+
+            .line {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                label {
+                    height: 40px;
+                    width: unset;
+                    padding: 0 32px;
+                    margin-right: 10px;
+                }
+
+                .all {
+                    height: 40px;
+                }
+
+                .first {
+                    margin-right: 32px;
+
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: $dark_70;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

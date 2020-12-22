@@ -1,0 +1,30 @@
+#soon {
+    height: fit-content;
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include min-lg {
+            max-width: 1320px !important;
+        }
+
+        .row {
+            @include min-lgUp {
+                width: 1415px;
+            }
+        }
+
+        .col-xl-6,
+        .col-mm-8,
+        .col-lg-12,
+        .col-xs-12 {
+            // padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}

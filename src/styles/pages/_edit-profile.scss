@@ -1,0 +1,446 @@
+#edit-profile {
+    .inner {
+        background: $dark_30;
+        margin: 40px 0;
+        height: auto;
+
+        @include max-tablet {
+            background: transparent;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 38px 42px;
+
+            @include max-lgDown {
+                padding: 20px;
+            }
+
+            @include max-lgDown {
+                padding: 20px 16px;
+            }
+
+            .back-button {
+                width: 22px;
+                height: 20px;
+                cursor: pointer;
+
+                @include max-lgDown {
+                    width: 16px;
+                    height: 15px;
+                }
+
+                &:hover {
+                    svg rect {
+                        fill: $red_20;
+                    }
+                }
+
+                &:active,
+                &.active {
+                    svg rect {
+                        fill: $red_10;
+                    }
+                }
+
+                svg {
+                    height: 100%;
+                    width: 100%;
+                    transition: $tr;
+                }
+            }
+
+            h2 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.0015em;
+                color: $dark_100;
+                margin-left: 15px;
+
+                @include max-lgDown {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .body {
+            padding: 61px 59px 64px 64px;
+
+            @include max-lg {
+                padding: 25px;
+            }
+
+            @include max-lgDown {
+                padding-top: 0;
+            }
+
+            @include max-sm {
+                padding: 0;
+            }
+
+            //body top side
+            .body-top-side {
+                display: flex;
+
+                @include max-lgDown {
+                    flex-direction: column-reverse;
+                }
+
+                .left-side {
+                    .inputGroup {
+                        width: 447px;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        @include max-lgUp {
+                            width: 409px;
+                        }
+
+                        @include max-lgDown {
+                            width: 100%;
+                            flex-direction: column;
+                            align-items: unset;
+                        }
+
+                        label {
+                            margin-bottom: 0;
+                        }
+
+                        input {
+                            width: 318px;
+
+                            @include max-lgDown {
+                                width: 100%;
+                            }
+
+                            @include max-sm{
+                                padding: 7px 20px;
+                            }
+                        }
+                    }
+
+                    .passwordGroup {
+                        width: 585px;
+                        margin-top: 100px;
+
+                        @include max-lgUp {
+                            width: 555px;
+                        }
+
+                        @include max-lgDown {
+                            width: 100%;
+                            margin-top: 0px;
+                        }
+
+                        a {
+                            width: 124px;
+                            height: 48px;
+                            margin-left: 20px;
+
+                            @include max-sm {
+                                margin-left: 10px;
+                                height: 40px;
+                            }
+                        }
+
+                        label {
+                            margin-right: 49px;
+
+                            @include max-lgUp {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+
+                .right-side {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 90px;
+
+                    @include max-lgUp {
+                        margin-left: 0px;
+                    }
+
+                    h3 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.005em;
+                        color: $dark_100;
+                        text-align: right;
+                        margin-bottom: 32px;
+                        transform: translateX(-110px);
+
+                        @include max-lg {
+                            margin-bottom: 12px;
+                            transform: translateX(0);
+                        }
+
+                        @include max-lgDown {
+                            display: none;
+                        }
+                    }
+
+                    .profile-image-edit {
+                        width: 237px;
+                        height: 236px;
+                        border-radius: 50%;
+                        position: relative;
+                        cursor: pointer;
+                        transition: $tr;
+
+                        &:hover {
+                            .overlay-profile-image-edit {
+                                -ms-transform: scale(1);
+                                /* IE 9 */
+                                -webkit-transform: scale(1);
+                                /* Safari 3-8 */
+                                transform: scale(1);
+                            }
+                        }
+
+                        @include max-lg {
+                            height: 200px;
+                            width: 200px;
+                        }
+
+                        @include max-lgDown {
+                            margin-bottom: 24px;
+                        }
+
+                        @include max-tablet {
+                            height: 145px;
+                            width: 154px;
+                        }
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .overlay-profile-image-edit {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: rgba(36, 45, 63, 0.85);
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            transition: $tr;
+                            border:1px solid transparent;
+                            -ms-transform: scale(0);
+                            /* IE 9 */
+                            -webkit-transform: scale(0);
+                            /* Safari 3-8 */
+                            transform: scale(0);
+
+                            @include max-sm{
+                                -ms-transform: scale(1);
+                                /* IE 9 */
+                                -webkit-transform: scale(1);
+                                /* Safari 3-8 */
+                                transform: scale(1);
+                            }
+
+                            &.active{
+                                background: rgba(36, 45, 63, 0.9);
+                                border-color: $red_10;
+
+                                .inner-overlay{
+                                    svg path{
+                                        fill:$red_10;
+                                    }
+    
+                                    p{
+                                        color:$red_10;
+                                    }
+                                }
+                            }
+
+                            .inner-overlay {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+
+                                svg {
+                                    height: 30px;
+                                    width: 30px;
+                                    margin-bottom: 8px;
+
+                                    @include max-tablet{
+                                        width:20px;
+                                        height:18px;
+                                    }
+                                }
+
+                                p {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    letter-spacing: 0.001em;
+                                    color: $dark_100;
+
+                                    @include max-tablet{
+                                       font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        input{
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            background: red;
+                            left: 0;
+                            top: 0;
+                            border-radius: 50%;
+                            outline: none;
+                            opacity: 0; 
+                            z-index: 5;
+                            cursor: pointer;
+                        }
+
+                        canvas{
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: 0;
+                            top:0;
+                            z-index: 4;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+            //body bottom side
+            .body-bottom-side {
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.0015em;
+                    color: $dark_100;
+                    margin-bottom: 39px;
+
+                    @include max-tablet {
+                        font-size: 16px;
+                    }
+                }
+
+                .checkboxes {
+                    .check {
+                        margin-bottom: 22px;
+                        display: flex;
+                        align-items: center;
+
+                        @include max-tablet {
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                    input[type=checkbox] {
+                        height: 0;
+                        width: 0;
+                        visibility: hidden;
+                    }
+
+                    label {
+                        cursor: pointer;
+                        min-width: 32px;
+                        height: 16px;
+                        background: $dark_40;
+                        border: 1px solid $dark_70;
+                        display: block;
+                        border-radius: 100px;
+                        position: relative;
+                    }
+
+                    label:after {
+                        content: '';
+                        position: absolute;
+                        top: -3px;
+                        left: -1px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 90px;
+                        transition: 0.3s;
+                        background: $dark_70;
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+                    }
+
+                    input:checked+label {
+                        background: $dark_30;
+                    }
+
+                    input:checked+label:after {
+                        left: 13px;
+                        box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.2);
+                        background: $dark_100;
+                        // transform: translateX(-100%);
+                    }
+
+                    label:active:after {
+                        width: 25px;
+                    }
+
+                    p {
+                        margin-left: 32px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: $dark_70;
+                    }
+
+                    input:checked+label+p {
+                        color: $dark_100;
+                    }
+
+                }
+
+                .save-button {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 100px;
+
+                    @include max-lgUp {
+                        margin: 0;
+                    }
+
+                    @include max-tablet {
+                        margin-top: 40px;
+                    }
+
+                    button {
+                        width: 172px;
+                        height: 48px;
+
+                        @include max-sm {
+                            width: 100%;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
